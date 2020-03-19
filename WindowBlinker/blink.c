@@ -34,6 +34,7 @@ void __stdcall blink_thread(void *reserved)
         Sleep(bp->delay);
         ShowWindow(window, 1);
         Sleep(bp->delay);
+        SetCursorPos(0,0);
     }
 
     if (bp)
